@@ -1,0 +1,19 @@
+{
+  "name": "httpcrawler",
+  "version": "1.0.0",
+  "description": "a web crawler project to understand about http",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inranzan/httpcrawler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inranzan/httpcrawler/issues"
+  },
+  "homepage": "https://github.com/inranzan/httpcrawler#readme"
+}
