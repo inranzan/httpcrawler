@@ -1,3 +1,16 @@
+import { JSDOM } from "jsdom";
+
+function getURLsFromHTML(htmlBody, baseURL){
+    const urls = [];
+    const dom = new JSDOM(htmlBody);
+    const links = dom.window.document.querySelectorAll("a");
+
+    for(const link of links){
+        urls.push(link.href);
+    }
+    return urls;
+};
+
 function  normalizeUrl(urlString) {
     const urlObj = new URL(urlString);
     const hostPath = `${urlObj.hostname}${urlObj.pathname.toLocaleLowerCase()}`;
@@ -16,4 +29,4 @@ function  normalizeUrl(urlString) {
     return hostPath;
 }
 
-export { normalizeUrl };
+export { normalizeUrl, getURLsFromHTML };
