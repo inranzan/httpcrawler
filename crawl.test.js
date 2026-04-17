@@ -3,8 +3,8 @@ import { test, expect } from "@jest/globals";
 
 
 test("normalizeURL",  () => {
-    const input = ""
+    const input = "https://rnzn.onslate.in/contact";
     const actual = normalizeUrl(input);
-    const expected = ""
+    const expected = "rnzn.onslate.in/contact";
     expect(actual).toEqual(expected);
 })
